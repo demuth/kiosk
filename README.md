@@ -1,0 +1,4 @@
+kiosk
+=====
+
+Kiosk versioning
