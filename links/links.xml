@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<links>
+	<link>
+		<name>FBMN</name>
+		<url>http://www.fbmn.org</url>
+	</link>
+	<link>
+		<name>Young FBMN</name>
+		<url>http://www.fbmn.org/page/1071/young/farmers/and/ranchers.html</url>
+	</link>
+        <link>
+		<name>AFBF</name>
+		<url>http://en.wikipedia.org/wiki/American_Farm_Bureau_Federation</url>
+	</link>
+	<link>
+		<name>Nuitrition</name>
+		<url>http://teamnutrition.usda.gov/</url>
+	</link>
+	<link>
+		<name>Ag Ed</name>
+		<url>http://ag-ed.cfans.umn.edu/</url>
+	</link>
+	<link>
+		<name>UMN Extension</name>
+		<url>http://www.extension.umn.edu/</url>
+	</link>
+	<link>
+		<name>4-H</name>
+		<url>http://www1.extension.umn.edu/youth/mn4-H/</url>
+	</link>
+	<link>
+		<name>NDSU Extension</name>
+		<url>http://www.ag.ndsu.edu/extension/</url>
+	</link>
+       <link>
+               <name>Ag Cab Lab</name>
+               <url>http://agcablab.org</url>
+       </link>
+	   <link>
+		<name>test</name>
+		<url><![CDATA[http://www.edugamer.org/app/playGame.aspx?userGameId=4624&isfullscreen=1]]></url>
+	   </link>
+	   <link>
+		<name>vcsu</name>
+		<url>http://www.vcsu.edu/academics</url>
+	   </link>
+</links>

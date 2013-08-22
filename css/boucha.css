@@ -1,0 +1,93 @@
+.tableOpacity {
+background-color: black;
+opacity:0.3;
+filter:alpha(opacity=30);
+}
+
+.slideContainer {
+	overflow: hidden;
+	#height: 800px;
+	#width: 1140px;
+	position:relative;
+	#line-height: 780px;
+	
+	
+}
+
+body {
+	overflow: hidden;
+}
+
+.slide {
+	#max-height: 100px;
+	max-width: 100%;
+	width: auto;
+	#min-height:800px;
+	vertical-align: middle;
+}
+
+.video {
+	margin-left:10px;
+	width: 100%;
+	max-height:440px;
+}
+
+.mainContent{
+	#background-color:#b0c4de;
+}
+
+.weatherPanel {
+	background:rgba(255,204,51,0.7);
+	border-radius: 10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:10px;
+	margin-left:10px;
+}
+
+.weatherFont {
+	font-size: 20pt; 
+	text-shadow:none; 
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+.weatherFont2 {
+	font-size: 20pt; 
+	text-shadow:none; 
+	text-align:center;
+	margin-top:5px;
+	margin-bottom:0px;
+}
+
+.weatherCondition {
+	background:rgba(122,0,25,1);
+	border-radius: 8px;
+	width:30%;
+}
+
+.weatherConditionText {
+	font-size: 15pt; 
+	color: white; 
+	text-shadow: none;
+}
+
+.timeContainer {
+	margin-top: 15px;
+	margin-left:10px;
+}
+
+.timeContainer p {
+	font-size: 18pt;
+	font-weight: bold;	
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+     color:white;
+}

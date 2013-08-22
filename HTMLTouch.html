@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTMLTouch</title>
+		
+		<link rel="stylesheet" href="jquery.mobile-1.3.0/jquery.mobile-1.3.0.min.css" />
+		<script src="jquery.mobile-1.3.0/jquery-1.9.1.js"></script>
+		<script src="jquery.mobile-1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	
+		<script src="javascript/boucha.js"></script>
+		<script src="javascript/jquery.flexslider.js"></script>
+		<link rel="stylesheet" href="css/flexslider.css"/>
+		<link rel="stylesheet" href="css/boucha.css"/>
+		<link rel="shortcut icon" href="other-resources/favicon.ico" />
+
+	</head>
+	
+	<body id="html_body">
+	<div data-role="page" id="home" class="type-interior">
+	<center>
+		<div id="navHeader" data-role="header" data-position="fixed" data-inline="true"> 
+
+			<h1 id="navigationBar">Kiosk Name</h1>
+			<a href="#aboutPopup" data-rel="popup" data-role="button" data-inline="true" class="ui-btn-right" data-theme="b" data-icon="info" data-position-to="window" data-transition="pop">About</a>
+			
+			
+			<div data-role="popup" id="aboutPopup" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all">
+				<div data-role="header" data-theme="a" class="ui-corner-top">
+					<h1>About</h1>
+				</div>
+				<div data-role="content" class="ui-corner-bottom ui-content">
+					<h3 class="ui-title">HTMLTouch Software</h3>
+					<p>This software was created by John Boucha and David DeMuth Jr.</p> <br/>
+					<p>Version Stand Alone build 2013.03.24</p>
+					<center><a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Okay</a></center>
+				</div>
+			</div>
+		</div> 
+		
+		<div data-role="content" >
+			<table class="mainContent">
+				<tr>
+					<td>
+						<div>
+							<div class="flex-container">
+								<div class="flexslider">
+									<ul class="slides" id="slideList">
+										<li>
+											<img src="other-resources/1.jpg" onload="scale(this);"/>
+										</li>
+										<li>
+											<img src="other-resources/2.jpg" onload="scale(this);"/>
+										</li>
+										<li>
+											<img src="other-resources/3.jpg" onload="scale(this);"/>
+										</li>
+									</ul>
+								</div>															
+								<div data-role="controlgroup" data-type="horizontal" data-inline="true" style="margin-left:auto; margin-right:auto; text-align:center; float:none; margin-top:-50px;">
+									<a href="#" data-role="button" onclick="prevFlexSlide();">Previous</a>
+									<a href="#" data-role="button" onclick="pauseFlexSlide();">Pause</a>
+									<a href="#" data-role="button" onclick="playFlexSlide();">Start</a>
+									<a href="#" data-role="button" onclick="nextFlexSlide();">Next</a>
+									<a href="#slideMenuPop" data-role="button" data-rel="popup" data-theme="b" data-transition="pop">Index</a>
+									<div data-role="popup" id="slideMenuPop" data-theme="a"
+										style="width:400px; height:400px; overflow: auto; overflow-x: hidden;">
+										
+										<ul data-role="listview" data-inset="true" style="min-width:205px;" data-theme="b" id="slideMenu">
+											<li>image 1</li>
+											<li>image 2</li>
+											<li>image 3</li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</td>
+					
+					<td valign="top" width="100%">
+						<center>
+						<div class="weatherContainer" >
+								<div class="weatherPanel">
+									<p class="weatherFont" id="cityName">Weather Panel</p>
+									<table width="100%">
+										<tr>
+											<td class="weatherCondition">
+												<center>
+													<br/>
+													<text class="weatherConditionText" id="statusToday" style="padding-top:10px;">Status</text><br/>
+													<img id="todayWeatherIcon" src="other-resources/chancerain.gif"/><br/>
+													<text class="weatherConditionText" id="todayTemps">? / ?</text><br/>
+													<text class="weatherConditionText" id="todayDate">Today</text><br/>
+													<br/>
+												</center>
+											</td>
+											<td class="weatherCondition">
+												<center>
+													<br/>
+													<text class="weatherConditionText" id="statusTomorrow">Status</text><br/>
+													<img id="tomorrowWeatherIcon" src="other-resources/chancerain.gif"/><br/>
+													<text class="weatherConditionText" id="tomorrowTemps">? / ?</text><br/>
+													<text class="weatherConditionText" id="tomorrowDate">Tomorrow</text><br/>
+													<br/>
+												</center>
+											</td>
+											<td class="weatherCondition">
+												<center>
+													<br/>
+													<text class="weatherConditionText" id="statusDayAfter">Status</text><br/>
+													<img id="dayAfterWeatherIcon" src="other-resources/chancerain.gif"/><br/>
+													<text class="weatherConditionText" id="dayAfterTemps">? / ?</text><br/>
+													<text class="weatherConditionText" id="dayAfterDate">Day After</text><br/>
+													<br/>
+												</center>
+											</td>
+										</tr>
+									
+									</table>
+									<p class="weatherFont2">3-day Forecast</p>
+								</div>
+						</div>
+						
+						
+						<div class="ui-body ui-body-b timeContainer">
+							<p id="dateTime">text</p>
+						</div>
+						
+						<p></p>
+						
+							<center>
+								<video class="video" id="videoPlayer">
+								</video><br/>
+											
+								<div data-role="controlgroup" data-type="horizontal" data-inline="true" data-mini="true">
+									<a href="#videoPopup" data-rel="popup" data-position-to="window" data-transition="pop"  
+									data-role="button" onclick="videoGoFullScreen();" data-theme="b">Bigger</a>
+									<a href="#" data-role="button" onclick="prevVideo();">Previous</a>
+									<a href="#" data-role="button" onclick="document.getElementById('videoPlayer').play();">Play</a>
+									<a href="#" data-role="button" onclick="document.getElementById('videoPlayer').pause();">Pause</a>
+									<a href="#" data-role="button" onclick="nextVideo();">Next</a>
+									<a href="#" data-role="button" onclick="videoMute();">Mute</a>
+									<a href="#videoMenuPop" data-role="button" data-rel="popup" data-theme="b" data-transition="pop">Index</a>
+								</div>
+							</center>	
+								
+									<div data-role="popup" id="videoPopup" data-overlay-theme="a" data-theme="c" style="max-width:1300px;" class="ui-corner-all">
+
+										<div data-role="content" class="ui-corner-bottom ui-content" data-theme="a" style="width:1300px">
+											<center>
+												<br/>
+												<video width="90%" id="largeVideoPlayer">
+												</video><br/>
+												<a href="#" onclick="closeVideoPopup();" data-role="button" data-inline="true" data-rel="back" data-theme="c">Close</a>
+											</center>
+										</div>
+									</div>
+							
+									<div data-role="popup" id="videoMenuPop" data-theme="a"
+												style="width:400px; height:400px; overflow: auto; overflow-x: hidden;">
+										<ul data-role="listview" data-inset="true" style="min-width:205px;" data-theme="b" id="videoMenu">
+											<li>image 1</li>
+											<li>image 2</li>
+											<li>image 3</li>
+										</ul>
+									</div>
+								
+							
+
+						
+						</center>
+					</td>
+					
+					
+				</tr>
+			</table>
+			
+			<center>
+				<div id="buttonContent" class="ui-body ui-body-b"></div>
+				
+				<div data-role="popup" id="urlPop" data-overlay-theme="a" data-theme="c" style="width:1300px;">
+
+								<div data-role="content" class="ui-corner-bottom ui-content" data-theme="a" style="width:1270px; height:870px;">
+									<center>
+										<br/>
+										<div id="urlContent">
+											<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="http://www1.crk.umn.edu" frameborder="0" width="100%" height="780"></iframe>
+										</div>
+											<br/>
+										<a href="#" data-role="button" data-inline="true" data-theme="c" data-rel="back">Browser Back</a>
+										<a href="#" onclick="closeURLPop();" data-role="button" data-inline="true" data-theme="c">Browser Close</a>
+									</center>
+								</div>
+							</div>
+					
+			</center>
+		</div>
+		
+		<div id="navFooter" data-role="footer" class="ui-bar" style="height: 44px;" data-inline="true" data-position="fixed"> 
+				<img src="other-resources/twitter-logo-44.png" height="44" style="float:left;"/>
+			<h5 style="float:left;"><div id="twitterBox" style="height: 44px;">
+				loading tweets...
+			</div></h5>
+		</div> 
+				
+	</div>	
+	
+	
+		
+</div>	
+
+
+</body>
+	
+	
+
+</html>

@@ -1,0 +1,11 @@
+<setup>
+  <darkColor>#7A0019</darkColor>
+  <lightColor>#FFCC33</lightColor>
+  <twitterName>MNFarmBureau</twitterName>
+  <twitterName>nasa</twitterName>
+  <tweetsToDisplay>5</tweetsToDisplay>
+  <zipCode>55420</zipCode>
+  <title>My Touch Software</title>
+  <slideInterval>7</slideInterval>
+  <slideTransition>slide</slideTransition>
+</setup>

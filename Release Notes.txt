@@ -1,0 +1,86 @@
+HTMLTouch Stand Alone
+---------------------
+
+How to Guide
+------------
+Selecting the Previous, Next, or an image in the Index Menu will pause slide show.  Press Start to continue interval.
+
+File: setup/setup.xml
+Options:	slideInterval = integers in the form of seconds
+			slideTransition = your animation type, "fade" or "slide" (case sensitive)
+			twittername = multiple instances allowed
+			
+File videos/video.xml
+Options:	only videos with the .webm format are accepted
+			for each video element only include name of video
+			use VLC Player to convert videos to .webm (the HTML5 standard for Firefox) if needed
+			
+File links/links.xml
+Options:	when embedding a flash app with options the url needs to be located in a CDATA tag. For example:
+			<![CDATA[http://www.edugamer.org/app/playGame.aspx?userGameId=4624&isfullscreen=1]]> (Kelly's app for fullscreen mode)
+
+		
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+Release Build: 2013.xx.xx
+
+Changes Made:
+-------------
+1. Fixed another bug in iFrame to allow Flash apps to work
+2. Fixed bug that displayed time 12:27 PM as 0:27 AM
+3. Added feature to include multiple Twitter feeds
+4. Added option to change number of tweets from Twitter feeds
+5. Added links to tweets
+
+Files Updated:
+--------------
+HTMLTouch.html
+Boucha.js
+setup.xml
+Boucha.css
+
+
+-----------------------------------------------------------------------------------------
+
+Release build: 2013.03.24
+
+Changes Made:
+-------------
+1. Enabled scripting in iframe element in HTMLTouch to allow javascript to run in external web links
+
+Files Updated:
+--------------
+HTMLTouch.html
+Boucha.js
+
+
+----------------------------------------------------------------------------------------			
+Release build: 2013.03.23
+
+Changes Made:
+-------------
+1. FlexSlider 2.0 is now being used for slides
+2. Slides of different sizes scale to slide container
+3. Weather panel doesn't resize on load
+4. Removed extra images and videos to reduce application build size for release builds
+5. Added a favicon
+6. Title comes from setup.xml
+7. Menus close on selection
+8. Slide intervals added to setup.xml (integer in seconds)
+9. Built for 1920x1080 displays
+
+Files Updated:
+--------------
+HTMLTouch.html
+Boucha.css
+Boucha.js
+slides.xml
+videos.xml
+setup.xml
+
+Additional Files Included:
+--------------------------
+javascript/juery.flexslider.js
+css/flexslider.js
+jquery.mobile 1.2 upgraded to jquery-mobile 1.3.0 (directories updated as well)
