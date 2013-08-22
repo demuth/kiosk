@@ -1,1 +1,15 @@
-testing
+testing ignore - 
+mkdir kiosk
+cd kiosk
+git init
+git remote add origin https://github.com/demuth/kiosk/
+git add *
+
+touch test-ignore.txt
+emacs -nw .gitignore
+test-ignore.txt
+
+git add .gitignore
+git pull --rebase
+git commit -m "First Commit"
+git push origin master
