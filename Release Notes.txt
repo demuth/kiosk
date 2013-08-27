@@ -84,3 +84,9 @@ Additional Files Included:
 javascript/juery.flexslider.js
 css/flexslider.js
 jquery.mobile 1.2 upgraded to jquery-mobile 1.3.0 (directories updated as well)
+
+
+---tweaks 2013-08-15---
+Swappable content containers default: ~/containers
+Add new container example:
+	<div class="variable_content_container" data-src="containers/mind-map.htm" style="width:492px;height:300px"></div>

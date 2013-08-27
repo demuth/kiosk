@@ -1,5 +1,6 @@
 
-
+/*
+//moved to main page to keep all the init(ready) events together and in order.
 jQuery(document).ready(function($) { 
 	loadSlideXML();
 	loadWeather();  
@@ -13,6 +14,7 @@ jQuery(document).ready(function($) {
 	setInterval("getTime()", 1000);	
 	setScreenParameters();
 });
+*/
 
 /////////// screen resolution
 
@@ -279,6 +281,9 @@ function menuSelected(index) {
 
 function loadWeather() {
 
+	if($(".weatherContainer").length == 0)
+		return;
+		
 	weatherXhttp = new XMLHttpRequest();
 	weatherXhttp.open("GET","setup/setup.xml",false);
 	weatherXhttp.send();
@@ -431,6 +436,8 @@ function parseTwitterLinks(array) {
 function nextTweet() {
 
 	//alert("" + tweetCounter);
+	if(tweets.length == 0)
+		return;
 	tweetCounter++;
 	if(tweetCounter > tweets.length - 1) {
 		tweetCounter = 0;

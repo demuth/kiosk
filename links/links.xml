@@ -32,16 +32,12 @@
 		<name>NDSU Extension</name>
 		<url>http://www.ag.ndsu.edu/extension/</url>
 	</link>
-       <link>
-               <name>Ag Cab Lab</name>
-               <url>http://agcablab.org</url>
-       </link>
-	   <link>
-		<name>test</name>
-		<url><![CDATA[http://www.edugamer.org/app/playGame.aspx?userGameId=4624&isfullscreen=1]]></url>
-	   </link>
-	   <link>
-		<name>vcsu</name>
-		<url>http://www.vcsu.edu/academics</url>
-	   </link>
+	<link>
+		<name>Ag Cab Lab</name>
+		<url>http://agcablab.org</url>
+	</link>
+	<link>
+		<name>Test Game 1</name>
+		<url><![CDATA[http://www.edugamer.org/app/playGame.aspx?userGameId=4564&isfullscreen=1]]></url>
+    </link>	 
 </links>
